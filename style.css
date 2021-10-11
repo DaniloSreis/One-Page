@@ -1,0 +1,245 @@
+header {
+  background: var(--bgSite);
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+}
+
+.info > div {
+  padding-left: 2.5rem;
+}
+
+.info > div > h1 {
+  color: var(--title);
+  font-size: 3.6rem;
+}
+
+.info > div > p {
+  color: var(--text);
+  font-size: 1.9rem;
+}
+
+.info > div > button {
+  background: var(--buttonColor);
+  color: #fff;
+  width: 15.5rem;
+  height: 5rem;
+  box-shadow: 0px 5px 5px rgba(23, 23, 23, 0.1);
+  border-radius: 0.5rem;
+  margin-top: 4.5rem;
+}
+
+.img-header {
+  display: flex;
+  justify-content: right;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.container-card {
+  display: grid;
+  justify-items: center;
+  margin: 15rem 0;
+}
+
+.card-1,
+.card-2,
+.card-3,
+.card-4,
+.card-5,
+.card-6 {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.container-card > .card-1 > .img {
+  background: #ff6363;
+  width: 34.4rem;
+  height: 22.2rem;
+}
+.container-card > .card-2 > .img {
+  background: #63ecff;
+  width: 34.4rem;
+  height: 22.2rem;
+}
+.container-card > .card-3 > .img {
+  background: #f363ff;
+  width: 34.4rem;
+  height: 22.2rem;
+}
+
+.container-card > .card-4 > .img {
+  background: #63ff73;
+  width: 34.4rem;
+  height: 22.2rem;
+}
+
+.container-card > .card-5 > .img {
+  background: #ffdd63;
+  width: 34.4rem;
+  height: 22.2rem;
+}
+
+.container-card > .card-6 > .img {
+  background: #6663ff;
+  width: 34.4rem;
+  height: 22.2rem;
+}
+
+.card-1 > .content,
+.card-2 > .content,
+.card-3 > .content,
+.card-4 > .content,
+.card-5 > .content,
+.card-6 > .content {
+  width: 34rem;
+  padding: 2.5rem;
+}
+
+.container-card > .card-1 > .content > h1,
+.container-card > .card-2 > .content > h1,
+.container-card > .card-3 > .content > h1,
+.container-card > .card-4 > .content > h1,
+.container-card > .card-5 > .content > h1,
+.container-card > .card-6 > .content > h1 {
+  color: var(--title);
+}
+
+.container-card > .card-1 > .content > p,
+.container-card > .card-2 > .content > p,
+.container-card > .card-3 > .content > p,
+.container-card > .card-4 > .content > p,
+.container-card > .card-5 > .content > p,
+.container-card > .card-6 > .content > p {
+  color: var(--text);
+  width: 28.2rem;
+}
+
+footer {
+  background: var(--bgSite);
+  padding: 2rem 0 2rem 0;
+}
+
+footer div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 6rem;
+  gap: 2.5rem;
+}
+
+footer div input {
+  width: 47rem;
+  height: 6.5rem;
+  padding-left: 2.5rem;
+  border-radius: 0.6rem;
+}
+
+footer div textarea {
+  width: 47rem;
+  height: 16.5rem;
+  padding: 2.5rem;
+}
+
+footer div button {
+  width: 47rem;
+  height: 5rem;
+  color: #fff;
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  border-radius: 0.6rem;
+  background: var(--buttonColor);
+}
+
+@media (max-width: 1088px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 712px) {
+  .info {
+    flex-direction: column;
+  }
+
+  .info > div > h1 {
+    color: var(--title);
+    font-size: 3.2rem;
+  }
+
+  .info > div > p {
+    color: var(--text);
+    font-size: 1.8rem;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .img-header > img {
+    margin-top: 2.5rem;
+  }
+  footer div input {
+    width: 33rem;
+    height: 6rem;
+  }
+  footer div textarea {
+    width: 33rem;
+    height: 15rem;
+  }
+  footer div button {
+    width: 33rem;
+    height: 5rem;
+  }
+  footer div input {
+    width: 30rem;
+    height: 6rem;
+  }
+  footer div textarea {
+    width: 30rem;
+    height: 15rem;
+  }
+  footer div button {
+    width: 30rem;
+    height: 5rem;
+  }
+  .card-1 > .content,
+  .card-2 > .content,
+  .card-3 > .content,
+  .card-4 > .content,
+  .card-5 > .content,
+  .card-6 > .content {
+    width: 27rem;
+  }
+
+  .container-card > .card-1 > .content > p,
+  .container-card > .card-2 > .content > p,
+  .container-card > .card-3 > .content > p,
+  .container-card > .card-4 > .content > p,
+  .container-card > .card-5 > .content > p,
+  .container-card > .card-6 > .content > p {
+    width: 25.2rem;
+  }
+
+  .container-card > .card-1 > .img,
+  .container-card > .card-2 > .img,
+  .container-card > .card-3 > .img,
+  .container-card > .card-4 > .img,
+  .container-card > .card-5 > .img,
+  .container-card > .card-6 > .img {
+    width: 27rem;
+  }
+}
